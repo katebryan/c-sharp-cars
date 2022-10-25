@@ -2,7 +2,7 @@
 using cSharpcars;
 using NUnit.Framework;
 
-[SetUpFixture]
+[TestFixture]
 public class Tests
 {
     [SetUp]
@@ -20,6 +20,6 @@ public class Tests
     public void triggerAPI()
     {
         var result = new API().callAPI();
-        Assert.IsNotNull(result);
+        Assert.That(result, Is.Not.Null);
     }
 }
