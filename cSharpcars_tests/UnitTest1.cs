@@ -1,25 +1,21 @@
 ﻿namespace cSharpcars_tests;
-using cSharpcars;
-using NUnit.Framework;
+using c_sharp_cars;
+using Newtonsoft.Json.Linq;
 
-[TestFixture]
 public class Tests
 {
+    API _api;
+
     [SetUp]
     public void Setup()
     {
+        _api = new API("<your_api_key>");
     }
 
     [Test]
-    public void Test1()
+    public async Task can_hit_api()
     {
-        Assert.Pass();
-    }
-
-    [Test]
-    public void triggerAPI()
-    {
-        var result = new API().callAPI();
-        Assert.That(result, Is.Not.Null);
+        JObject carParks = await this._api.GetAllCarParks();
+        Assert.That(carParks, Is.Not.Null);
     }
 }
