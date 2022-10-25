@@ -1,5 +1,8 @@
 ﻿namespace cSharpcars_tests;
+using cSharpcars;
+using NUnit.Framework;
 
+[SetUpFixture]
 public class Tests
 {
     [SetUp]
@@ -13,5 +16,10 @@ public class Tests
         Assert.Pass();
     }
 
-
+    [Test]
+    public void triggerAPI()
+    {
+        var result = new API().callAPI();
+        Assert.IsNotNull(result);
+    }
 }
