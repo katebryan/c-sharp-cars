@@ -1,30 +1,11 @@
 {
   "version": 3,
   "targets": {
-    ".NETStandard,Version=v2.1": {
-      "cSharpcars_tests/1.0.0": {
-        "type": "project",
-        "framework": "Unsupported,Version=v0.0",
-        "compile": {
-          "bin/placeholder/cSharpcars_tests.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/cSharpcars_tests.dll": {}
-        }
-      }
-    }
+    ".NETStandard,Version=v2.1": {}
   },
-  "libraries": {
-    "cSharpcars_tests/1.0.0": {
-      "type": "project",
-      "path": "../cSharpcars_tests/cSharpcars_tests.csproj",
-      "msbuildProject": "../cSharpcars_tests/cSharpcars_tests.csproj"
-    }
-  },
+  "libraries": {},
   "projectFileDependencyGroups": {
-    ".NETStandard,Version=v2.1": [
-      "cSharpcars_tests >= 1.0.0"
-    ]
+    ".NETStandard,Version=v2.1": []
   },
   "packageFolders": {
     "/Users/alicebroadhurst/.nuget/packages/": {}
@@ -50,11 +31,7 @@
       "frameworks": {
         "netstandard2.1": {
           "targetAlias": "netstandard2.1",
-          "projectReferences": {
-            "/Users/alicebroadhurst/Projects/cSharpcars/cSharpcars_tests/cSharpcars_tests.csproj": {
-              "projectPath": "/Users/alicebroadhurst/Projects/cSharpcars/cSharpcars_tests/cSharpcars_tests.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
@@ -85,16 +62,5 @@
         "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.402/RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1201",
-      "level": "Error",
-      "message": "Project cSharpcars_tests is not compatible with netstandard2.1 (.NETStandard,Version=v2.1). Project cSharpcars_tests supports: net6.0 (.NETCoreApp,Version=v6.0)",
-      "libraryId": "cSharpcars_tests",
-      "targetGraphs": [
-        ".NETStandard,Version=v2.1"
-      ]
-    }
-  ]
+  }
 }
