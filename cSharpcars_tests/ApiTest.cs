@@ -17,9 +17,10 @@ public class Tests
     }
 
     [Test]
-    public void triggerAPI()
+    public void GetCorrectResponseFromAPI()
     {
-        var result = new API().callAPI();
+        var result = new API().getApiResponse();
+        Console.WriteLine(result);
         Assert.That(result, Is.Not.Null);
     }
 }
