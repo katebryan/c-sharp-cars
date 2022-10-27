@@ -23,6 +23,6 @@
     <None Remove="Newtonsoft.Json" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\c_sharp_cars\cSharpCars.csproj" />
+    <ProjectReference Include="..\cSharpCars\cSharpCars.csproj" />
   </ItemGroup>
 </Project>

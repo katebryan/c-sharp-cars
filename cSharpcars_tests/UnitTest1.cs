@@ -1,5 +1,5 @@
 ﻿namespace cSharpcars_tests;
-using c_sharp_cars;
+using cSharpCars;
 using Newtonsoft.Json.Linq;
 using NUnit.Framework.Interfaces;
 

@@ -2,7 +2,7 @@
 using System.Web;
 using Newtonsoft.Json.Linq;
 
-namespace c_sharp_cars
+namespace cSharpCars
 {
     public class API
     {

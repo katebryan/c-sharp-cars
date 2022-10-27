@@ -12,6 +12,6 @@
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\c_sharp_cars\cSharpCars.csproj" />
+    <ProjectReference Include="..\cSharpCars\cSharpCars.csproj" />
   </ItemGroup>
 </Project>
