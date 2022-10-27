@@ -1,4 +1,10 @@
-﻿using c_sharp_cars;
+﻿/*
+ 
+ schedule->onTick()  => data scraper => pushed to kafta streams/logs => 
+ 
+ */
+
+using c_sharp_cars;
 
 string? apiKey;
 
@@ -23,4 +29,8 @@ API api = new API(apiKey);
 Console.WriteLine(await api.GetAllCarParks());
 
 Console.ReadLine();
-return 0;
+
+while (true)
+{
+
+}

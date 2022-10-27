@@ -351,3 +351,6 @@ MigrationBackup/
 
 # Mac
 .DS_Store
+
+# App settings
+appsettings*.json

@@ -28,8 +28,8 @@ namespace c_sharp_cars
             return JObject.Parse(strResponse);
         }
 
-        public async Task<JObject> GetAllCarParks() {
-            return await API.MakeRequest(_apiKey, "Carparks");
+        public async Task<JObject> GetAllCarParks(int count = 10) {
+            return await API.MakeRequest(_apiKey, "Carparks", "$top=" + count);
         }
     }
 }
