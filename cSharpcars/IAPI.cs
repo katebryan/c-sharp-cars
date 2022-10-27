@@ -4,6 +4,7 @@ namespace cSharpcars
 {
     public interface IApi
     {
-        Task<string> getApiResponse();
+        string getParking();
+        Task<string> getApiResponse(string endpoint);
     }
 }

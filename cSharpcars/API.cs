@@ -15,19 +15,21 @@ namespace cSharpcars
     /// </summary>
     public partial class API : IApi
     {
-        //TODO pass endpoints and query as params to this function
-        public async Task<string> getApiResponse()
+        public string getParking()
         {
-            var apiKey = "FILL THIS WITH YOUR API KEY - run test";
-            var endpoint = Endpoint.Carparks;
+            var result = getApiResponse(Endpoint.Carparks.ToString()).Result;
+            //TODO map the json response to a model
+            Console.WriteLine($"in func->> {result}");
+            return result;
+        }
 
+        public async Task<string> getApiResponse(string endpoint)
+        {
+            var apiKey = "7ffe66e864424ff6809b37c07ee2f27e";
             var url = $"https://api.tfgm.com/odata/" + endpoint + "?$top=10";
-
-
-
             var result = CallUri(url,apiKey).Result;
 
-            Console.WriteLine($"Calling the API --> {url}");
+            //Console.WriteLine($"Calling the URL--> {url}");
 
             if (result != null && result.IsSuccessStatusCode)
             {

@@ -1,4 +1,6 @@
 ﻿namespace cSharpcars_tests;
+
+using System.Diagnostics;
 using cSharpcars;
 using NUnit.Framework;
 
@@ -8,6 +10,7 @@ public class Tests
     [SetUp]
     public void Setup()
     {
+        Debug.WriteLine("SetUp Called");
     }
 
     [Test]
@@ -19,8 +22,10 @@ public class Tests
     [Test]
     public void GetCorrectResponseFromAPI()
     {
-        var result = new API().getApiResponse();
-        Console.WriteLine(result);
+        var api = new API();
+        var result = api.getApiResponse(api.getParking());
+
+        //Console.WriteLine("in test--> " + result);
         Assert.That(result, Is.Not.Null);
     }
 }
