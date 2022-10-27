@@ -25,7 +25,7 @@ namespace cSharpcars
 
         public async Task<string> getApiResponse(string endpoint)
         {
-            var apiKey = "7ffe66e864424ff6809b37c07ee2f27e";
+            var apiKey = "";
             var url = $"https://api.tfgm.com/odata/" + endpoint + "?$top=10";
             var result = CallUri(url,apiKey).Result;
 
